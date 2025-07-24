@@ -74,7 +74,7 @@ body {
   color: rgba(0, 0, 0, 0.5);
   font-size: 22px;
 }
-                             /* Plants Section  */
+/* Plants Section  */
 .plants-section {
   margin: 120px 150px;
 }
@@ -125,6 +125,60 @@ body {
   width: 100%;
   font-weight: 700;
 }
+.lover-section {
+  margin: 200px 150px 130px 150px;
+
+
+}
+.lover-section-container {
+  display: flex;
+  justify-content: space-between;
+  
+  align-items: center;
+  
+}
+
+.lover-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 60px;
+    
+    width: 50%;
+    
+}
+.lover-content h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.lover-content li {
+  list-style: disc;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.img-container {
+    
+    position: relative;
+}
+.img-container, .img-1 {
+  
+  object-fit: cover;
+  display: block;
+  
+ 
+  
+}
+.img-2 {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: -135px;
+  left: 390px;
+  /* margin:83px 507px 438px 347px ; */
+}
 /* responsive design for mobile device  */
 
 @media screen and (max-width: 576px) {
@@ -148,7 +202,7 @@ body {
   .fresh-flowers > img {
     margin-bottom: 28px;
   }
-  .fresh-content h1 {
+  .fresh-content, .lover-content h1 {
     font-size: 24px;
   }
   .fresh-content p {
@@ -161,22 +215,51 @@ body {
   .plant-content {
     margin: 0;
   }
-  .plant-content h1{
+  .plant-content h1 {
     font-size: 24px;
-    
   }
   .plant-content p {
     font-size: 14px;
     margin: 16px 13px 28px 13px;
   }
   .card-amount {
-  font-size: 16px;
+    font-size: 16px;
   }
   .card-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-btn {
+    padding: 20px 30px;
+  }
 
-  grid-template-columns: repeat(2, 1fr);
+.lover-section-container {
+  flex-direction: column;
 }
-.card-btn {
-  padding: 20px 30px;
+.lover-content h1 {
+  margin: 15px 0 0 0px;
+  
 }
+.lover-section {
+  
+ margin: 40px 15px 143px 15px;
+}
+.lover-content {
+    margin: 0px;
+    width: 100%;
+    
+}
+.lover-content ul {
+  margin: 15px;
+}
+.lover-content li {
+  font-size: 14px;
+}
+.img-container {
+  flex-direction: column;
+}
+
+.img-2{
+  display:none;
+}
+
 }
