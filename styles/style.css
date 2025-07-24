@@ -15,102 +15,168 @@ body {
 }
 /* shared style for this design  */
 .margin-all {
-    margin: 0 150px;
+  margin: 0 150px;
 }
 .color-nav {
-    color: #8987A1;
+  color: #8987a1;
 }
 .display-flex {
-    display: flex;
+  display: flex;
+}
+
+.fresh {
+  color: #e95a08;
 }
 /* header section design  */
 .nav-bar {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    font-size: 18px;
-    
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
 }
 .nav-list {
-    font-size: 16;
-    display: flex;
-    gap: 48px;
-    padding: 22px 0;
-
+  font-size: 16;
+  display: flex;
+  gap: 48px;
+  padding: 22px 0;
 }
 .list-items {
-    list-style: none;
-    display: flex;
-    gap: 40px;
+  list-style: none;
+  display: flex;
+  gap: 40px;
 }
 .list-cart {
-    gap: 10px;
+  gap: 10px;
 }
 .home {
-    color: #252432;
+  color: #252432;
 }
 
 /* Fresh flower section  */
 .fresh-flowers {
-    display: flex;
-    margin-top:120px ;
-    margin-bottom: 120px;
-    
+  display: flex;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 .fresh-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    
-}
-.fresh-content h1{
-    font-size: 65px;
-    font-weight: bold;
-}
-.fresh-content p {
-    margin-top: 13px;
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 22px;
-}
-.fresh {
-    color: #E95A08;
-}
-
-
-
-/* responsive design for mobile device  */
-
-@media screen and (max-width: 576px){
-    .nav-bar {
-        margin: 13px 16px 28px 16px;
-    }
-    .nav-bar img {
-        width: 63px;
-        height: 38px;
-    }
-    .list-items {
-    display: none;
-}
-.margin-all {
-    margin: 28px 16px 28px 16px;
-}
-.fresh-flowers {
-    margin: 20px 16px;
-    flex-direction: column-reverse;
-    
-}
-.fresh-flowers > img {
-    margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 .fresh-content h1 {
-    font-size: 24px;
+  font-size: 65px;
+  font-weight: bold;
 }
 .fresh-content p {
-    margin-top: 13px;
-    font-size: 14px;
+  margin-top: 13px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 22px;
+}
+                             /* Plants Section  */
+.plants-section {
+  margin: 120px 150px;
+}
+.plant-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 126px 49px 126px;
+}
+.plant-content h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.plant-content p {
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
+.card-items {
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.card-amount {
+  font-size: 22px;
+  font-weight: bold;
+  color: #111111;
+  margin-bottom: 20px;
+}
+.card-btn {
+  padding: 26px 50px;
+  background-color: #e95a08;
+  color: #ffffff;
+  width: 100%;
+  font-weight: 700;
+}
+/* responsive design for mobile device  */
+
+@media screen and (max-width: 576px) {
+  .nav-bar {
+    margin: 13px 16px 28px 16px;
+  }
+  .nav-bar img {
+    width: 63px;
+    height: 38px;
+  }
+  .list-items {
+    display: none;
+  }
+  .margin-all {
+    margin: 28px 16px 28px 16px;
+  }
+  .fresh-flowers {
+    margin: 20px 16px;
+    flex-direction: column-reverse;
+  }
+  .fresh-flowers > img {
+    margin-bottom: 28px;
+  }
+  .fresh-content h1 {
+    font-size: 24px;
+  }
+  .fresh-content p {
+    margin-top: 13px;
+    font-size: 14px;
+  }
+  .plants-section {
+    margin: 28px 16px 28px 16px;
+  }
+  .plant-content {
+    margin: 0;
+  }
+  .plant-content h1{
+    font-size: 24px;
     
+  }
+  .plant-content p {
+    font-size: 14px;
+    margin: 16px 13px 28px 13px;
+  }
+  .card-amount {
+  font-size: 16px;
+  }
+  .card-items {
+
+  grid-template-columns: repeat(2, 1fr);
+}
+.card-btn {
+  padding: 20px 30px;
+}
 }
