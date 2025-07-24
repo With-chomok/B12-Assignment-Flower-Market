@@ -26,7 +26,6 @@ body {
 /* header section design  */
 .nav-bar {
     margin-top: 30px;
-    padding: 0 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,6 +52,35 @@ body {
     color: #252432;
 }
 
+/* Fresh flower section  */
+.fresh-flowers {
+    display: flex;
+    margin-top:120px ;
+    margin-bottom: 120px;
+    
+}
+.fresh-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+}
+.fresh-content h1{
+    font-size: 65px;
+    font-weight: bold;
+}
+.fresh-content p {
+    margin-top: 13px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+}
+.fresh {
+    color: #E95A08;
+}
+
+
+
+/* responsive design for mobile device  */
 
 @media screen and (max-width: 576px){
     .nav-bar {
@@ -65,5 +93,24 @@ body {
     .list-items {
     display: none;
 }
+.margin-all {
+    margin: 28px 16px 28px 16px;
+}
+.fresh-flowers {
+    margin: 20px 16px;
+    flex-direction: column-reverse;
+    
+}
+.fresh-flowers > img {
+    margin-bottom: 28px;
+}
+.fresh-content h1 {
+    font-size: 24px;
+}
+.fresh-content p {
+    margin-top: 13px;
+    font-size: 14px;
+}
+
     
 }
