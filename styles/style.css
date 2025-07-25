@@ -169,6 +169,7 @@ body {
   position: absolute;
   top: -135px;
   left: 390px;
+  
 }
 
 /* deals section  */
@@ -282,6 +283,55 @@ body {
     "item-2 item-3";
 }
 
+/* join field section  */
+.join-section {
+  
+  background-image: url(../assets/news-letter-bg.png);
+  position: relative;
+  height: 533px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.join-content {
+  gap: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 195px 305px;
+}
+.join-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.join-input {
+  display: flex;
+  
+}
+.email {
+  padding: 8px 20px;
+  outline: none;
+  
+  color: rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  width: 640px;
+  height: 50px;
+}
+.subscribe{
+ 
+ 
+  text-align: center;
+  width: 186px;
+  height: 50px;
+  background-color: #E95A08;
+  padding: 8px 20px;
+  color: #ffffff;
+  
+}
 /* responsive design for mobile device  */
 
 @media screen and (max-width: 576px) {
@@ -397,5 +447,24 @@ body {
     color: #ffffff;
     text-decoration: 2px underline;
    
+}
+.join-section {
+  background-position: right;
+  object-fit:fill;
+  margin-top: 44px;
+  height: 275px;
+}
+.join-content {
+  margin: 44px 16px 16px 0;
+}
+.join-title {
+  font-size: 20px;
+}
+.email {
+  width: 218px;
+  height: 50px;
+}
+.subscribe {
+  width: 103px;
 }
 }
